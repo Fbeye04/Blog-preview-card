@@ -1,0 +1,114 @@
+:root {
+  --background-color: hsl(47, 88%, 63%);
+  --card-color: hsl(0, 0%, 100%);
+  --bold-color: hsl(0, 0%, 7%);
+  --light-color: hsl(0, 0%, 42%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  font-family: "Figtree", sans-serif;
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  background-color: var(--card-color);
+  max-width: 350px;
+  width: 90%;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 8px 8px 0px var(--bold-color);
+}
+
+.card-container .card-header img {
+  border-radius: 1rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  object-fit: cover;
+  height: 200px;
+}
+
+.card-container .card-body .structure:not(#author) {
+  margin-bottom: 1.25rem;
+}
+
+.card-container .card-body #learning {
+  background-color: var(--background-color);
+  width: fit-content;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: 800;
+}
+
+.card-container .card-body #publish {
+  font-weight: 500;
+}
+
+.card-container .card-body h1 {
+  font-weight: 800;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.card-container .card-body h1:hover {
+  cursor: pointer;
+  color: var(--background-color);
+  transition: color 0.3s ease;
+}
+
+.card-container .card-body #description {
+  color: var(--light-color);
+}
+
+.card-container .card-body #author {
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+  gap: 0.75rem;
+}
+
+.card-container .card-body #author img {
+  width: 2.5rem;
+}
+
+.attribution {
+  padding: 1rem 0 0.5rem 0;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  font-size: 11px;
+}
+
+@media (max-width: 375px) {
+  * {
+    font-size: 1rem;
+  }
+
+  .card-container {
+    width: 90%;
+  }
+}
