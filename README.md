@@ -23,8 +23,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Blog preeview card](https://github.com/Fbeye04/Blog-preview-card)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution blog preview card](https://github.com/Fbeye04/Blog-preview-card)
+- Live Site URL: [Blog preview card](https://fbeye04.github.io/Blog-preview-card/)
 
 ### Built with
 
